@@ -22,4 +22,8 @@ Gem::Specification.new do |spec|
   spec.metadata['bug_tracker_uri'] = 'https://github.com/y0wel/vegetable_box/issues'
 
   spec.require_paths = ['lib']
+
+  spec.add_dependency 'mechanize', '~> 2.8'
+  spec.add_dependency 'json', '~> 2.6'
+  spec.add_dependency 'date', '~> 3.4'
 end
