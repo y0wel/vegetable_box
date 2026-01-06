@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'spec_helper'
 
 RSpec.describe VegetableBox::Configuration do
@@ -14,14 +16,14 @@ RSpec.describe VegetableBox::Configuration do
   end
 
   it 'defines multiple configurable properties' do
-    expected_keys = [
-      :username,
-      :password,
-      :base_url,
-      :tour_id,
-      :address_id,
-      :delivery_date,
-      :mechanize_options
+    expected_keys = %i[
+      username
+      password
+      base_url
+      tour_id
+      address_id
+      delivery_date
+      mechanize_options
     ]
     expect(described_class::CONFIG_KEYS).to match_array(expected_keys)
   end

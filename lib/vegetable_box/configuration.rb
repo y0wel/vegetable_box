@@ -3,18 +3,18 @@
 module VegetableBox
   class Configuration
     DEFAULT_VALUES = {
-      base_url:          'https://www.diegemuesekiste.de',
+      base_url: 'https://www.diegemuesekiste.de',
       mechanize_options: { user_agent_alias: 'Mac Safari' }
     }.freeze
 
-    CONFIG_KEYS = [
-      :username,
-      :password,
-      :base_url,
-      :tour_id,
-      :address_id,
-      :delivery_date,
-      :mechanize_options
+    CONFIG_KEYS = %i[
+      username
+      password
+      base_url
+      tour_id
+      address_id
+      delivery_date
+      mechanize_options
     ].freeze
 
     attr_accessor(*CONFIG_KEYS)
