@@ -14,6 +14,8 @@ module VegetableBox
       tour_id
       address_id
       delivery_date
+      smtp
+      trello_inbox_mail
       mechanize_options
     ].freeze
 
@@ -27,6 +29,8 @@ module VegetableBox
       @tour_id           = params[:tour_id]
       @address_id        = params[:address_id]
       @delivery_date     = params[:delivery_date]
+      @smtp              = params[:smtp]
+      @trello_inbox_mail = params[:trello_inbox_mail]
       @mechanize_options = params[:mechanize_options]
     end
   end

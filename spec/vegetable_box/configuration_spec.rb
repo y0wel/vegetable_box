@@ -23,6 +23,8 @@ RSpec.describe VegetableBox::Configuration do
       tour_id
       address_id
       delivery_date
+      smtp
+      trello_inbox_mail
       mechanize_options
     ]
     expect(described_class::CONFIG_KEYS).to match_array(expected_keys)
