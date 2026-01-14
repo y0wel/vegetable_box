@@ -7,11 +7,14 @@ gemspec
 
 gem 'awesome_print'
 gem 'debug'
+gem 'mail'
+gem 'openssl'
 gem 'rake', '~> 13.0'
 gem 'rspec', '~> 3.0'
 
 group :development, :test do
-  gem 'rubocop', '~> 1.21'
+  gem 'rubocop', require: false
+  gem 'rubocop-rspec', require: false
 end
 
 group :test do

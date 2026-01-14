@@ -34,6 +34,12 @@ GEM
     language_server-protocol (3.17.0.5)
     lint_roller (1.1.0)
     logger (1.7.0)
+    mail (2.9.0)
+      logger
+      mini_mime (>= 0.1.1)
+      net-imap
+      net-pop
+      net-smtp
     mechanize (2.14.0)
       addressable (~> 2.8)
       base64
@@ -51,16 +57,27 @@ GEM
       logger
       mime-types-data (~> 3.2025, >= 3.2025.0507)
     mime-types-data (3.2025.0924)
+    mini_mime (1.1.5)
     mini_portile2 (2.8.9)
     net-http-digest_auth (1.4.1)
     net-http-persistent (4.0.6)
       connection_pool (~> 2.2, >= 2.2.4)
+    net-imap (0.6.2)
+      date
+      net-protocol
+    net-pop (0.1.2)
+      net-protocol
+    net-protocol (0.2.2)
+      timeout
+    net-smtp (0.5.1)
+      net-protocol
     nkf (0.2.0)
     nokogiri (1.18.10)
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
     nokogiri (1.18.10-arm64-darwin)
       racc (~> 1.4)
+    openssl (4.0.0)
     parallel (1.27.0)
     parser (3.3.10.0)
       ast (~> 2.4.1)
@@ -110,6 +127,9 @@ GEM
     rubocop-ast (1.48.0)
       parser (>= 3.3.7.2)
       prism (~> 1.4)
+    rubocop-rspec (3.9.0)
+      lint_roller (~> 1.1)
+      rubocop (~> 1.81)
     ruby-progressbar (1.13.0)
     rubyntlm (0.6.5)
       base64
@@ -120,6 +140,7 @@ GEM
     simplecov-html (0.13.2)
     simplecov_json_formatter (0.1.4)
     stringio (3.2.0)
+    timeout (0.6.0)
     tsort (0.2.0)
     unicode-display_width (3.2.0)
       unicode-emoji (~> 4.1)
@@ -134,9 +155,12 @@ PLATFORMS
 DEPENDENCIES
   awesome_print
   debug
+  mail
+  openssl
   rake (~> 13.0)
   rspec (~> 3.0)
-  rubocop (~> 1.21)
+  rubocop
+  rubocop-rspec
   simplecov
   vegetable_box!
 
