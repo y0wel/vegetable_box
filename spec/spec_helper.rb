@@ -5,6 +5,7 @@ SimpleCov.start do
   add_filter '/spec/'
 end
 
+require 'awesome_print'
 require 'vegetable_box'
 
 RSpec.configure do |config|
