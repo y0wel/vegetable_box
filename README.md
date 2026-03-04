@@ -1,6 +1,7 @@
 # VegetableBox
 
-[![Codecov test coverage](https://codecov.io/gh/y0wel/vegetable_box/branch/main/graph/badge.svg)](https://codecov.io/gh/y0wel/vegetable_box?branch=main)
+[![CI for Vegetable Box](https://github.com/y0wel/vegetable_box/actions/workflows/main.yml/badge.svg)](https://github.com/y0wel/vegetable_box/actions/workflows/main.yml)  
+
 TODO: Delete this and the text below, and describe your gem
 
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/vegetable_box`. To experiment with that code, run `bin/console` for an interactive prompt.
